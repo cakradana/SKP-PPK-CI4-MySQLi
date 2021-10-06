@@ -222,25 +222,25 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="<?= base_url('/admin/master_pangkat'); ?>" class="nav-link">
+                                    <a href="<?= base_url('/pangkat/master_pangkat'); ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Master Pangkat</p>
                                     </a>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a href="<?= base_url('/admin/master_unit_kerja'); ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Master Unit Kerja</p>
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="nav-item">
-                                    <a href="<?= base_url('/admin/master_jabatan'); ?>" class="nav-link">
+                                    <a href="<?= base_url('/jabatan/master_jabatan'); ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Master Jabatan</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?= base_url('/admin/master_tingkat'); ?>" class="nav-link">
+                                    <a href="<?= base_url('/tingkat/master_tingkat'); ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Master Tingkat</p>
                                     </a>
@@ -316,6 +316,6 @@
     <script src="<?= base_url('assets') ?>/dist/js/dataTables.min.js"></script>
     <script src="<?= base_url('assets') ?>/dist/js/dataTables.bs4.min.js"></script>
 
-    </body>
+</body>
 
 </html>
