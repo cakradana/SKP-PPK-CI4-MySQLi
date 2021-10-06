@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Admin;
 
+use App\Controllers\BaseController;
 use App\Models\PangkatModel;
 
 class Pangkat extends BaseController
@@ -15,7 +16,7 @@ class Pangkat extends BaseController
         $this->pangkatModel = new PangkatModel();
     }
 
-    public function master_pangkat()
+    public function index()
     {
         $pangkat = $this->pangkatModel->findAll();
 

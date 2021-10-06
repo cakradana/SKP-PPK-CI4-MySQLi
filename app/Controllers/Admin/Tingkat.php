@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Admin;
 
+use App\Controllers\BaseController;
 use App\Models\TingkatModel;
 
 class Tingkat extends BaseController
@@ -15,7 +16,7 @@ class Tingkat extends BaseController
         $this->tingkatModel = new TingkatModel();
     }
 
-    public function master_tingkat()
+    public function index()
     {
         $tingkat = $this->tingkatModel->findAll();
 

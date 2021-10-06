@@ -206,7 +206,7 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <li class="nav-item">
-                            <a href="<?= base_url('/dashboard/index'); ?>" class="nav-link">
+                            <a href="<?= base_url('/admin/dashboard'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -222,7 +222,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="<?= base_url('/pangkat/master_pangkat'); ?>" class="nav-link">
+                                    <a href="<?= base_url('/admin/pangkat'); ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Master Pangkat</p>
                                     </a>
@@ -234,13 +234,13 @@
                                     </a>
                                 </li> -->
                                 <li class="nav-item">
-                                    <a href="<?= base_url('/jabatan/master_jabatan'); ?>" class="nav-link">
+                                    <a href="<?= base_url('/admin/jabatan'); ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Master Jabatan</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?= base_url('/tingkat/master_tingkat'); ?>" class="nav-link">
+                                    <a href="<?= base_url('/admin/tingkat'); ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Master Tingkat</p>
                                     </a>

@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Admin;
 
+use App\Controllers\BaseController;
 use App\Models\JabatanModel;
 
 class Jabatan extends BaseController
@@ -15,7 +16,7 @@ class Jabatan extends BaseController
         $this->jabatanModel = new JabatanModel();
     }
 
-    public function master_jabatan()
+    public function index()
     {
         $jabatan = $this->jabatanModel->findAll();
 
