@@ -26,4 +26,16 @@ class Tingkat extends BaseController
         ];
         return view('admin/master_tingkat/index', $data);
     }
+
+    public function save()
+    {
+        $this->tingkatModel->save([
+            'nama_tingkat' => $this->request->getVar('nama_tingkat'),
+            'level' => $this->request->getVar('level')
+        ]);
+
+        session()->setFlashdata('pesan', 'Data berhasil ditambahkan.');
+
+        return redirect()->to('admin/tingkat');
+    }
 }

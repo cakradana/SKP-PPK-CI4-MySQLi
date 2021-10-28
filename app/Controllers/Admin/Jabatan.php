@@ -26,4 +26,15 @@ class Jabatan extends BaseController
         ];
         return view('admin/master_jabatan/index', $data);
     }
+
+    public function save()
+    {
+        $this->jabatanModel->save([
+            'nama_jabatan' => $this->request->getVar('nama_jabatan'),
+        ]);
+
+        session()->setFlashdata('pesan', 'Data berhasil ditambahkan.');
+
+        return redirect()->to('admin/jabatan');
+    }
 }

@@ -6,25 +6,25 @@ Master Jabatan
 
 <?= $this->section('isi'); ?>
 
+
+
+
 <div class="container">
-    <div>
-        <div class="card card-primary card-outline">
-            <div class="card-header">
-                <h3 class="card-title">Tambah Data Jabatan</h3>
-            </div> <!-- /.card-body -->
-            <div class="card-body">
-                <form method="post" action="">
-                    <div class="form-group">
-                        <label for="nama_pangkat">Nama Jabatan</label>
-                        <input type="text" class="form-control" id="nama_pangkat" name="isi_nama_pangkat" placeholder="" required>
-                    </div>
-            </div><!-- /.card-body -->
-            <div class="card-footer">
-                <button type="submit" class="btn btn-primary" name="bsimpan">Tambah</button>
-                <button type="reset" class="btn btn-danger">Bersihkan</button>
-            </div>
+
+    <?php if (session()->getFlashdata('pesan')) : ?>
+        <div class="alert alert-success" role="alert">
+            <?= session()->getFlashdata('pesan'); ?>
         </div>
-    </div>
+    <?php endif; ?>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#exampleModalCenter">
+        Tambah Data Jabatan
+    </button>
+    <?php
+    include 'create.php';
+    ?>
+
     <div class="row">
         <div class="col-12">
             <div class="card card-secondary card-outline">

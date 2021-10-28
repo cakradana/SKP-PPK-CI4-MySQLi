@@ -1,7 +1,7 @@
 <?= $this->extend('layout/template') ?>
 
 <?= $this->section('judul'); ?>
-Master Pangkat
+Master Pegawai
 <?= $this->endSection('judul'); ?>
 
 <?= $this->section('isi'); ?>
@@ -18,7 +18,7 @@ Master Pangkat
 
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#exampleModalCenter">
-        Tambah Data Pangkat
+        Tambah Data Pegawai
     </button>
     <?php
     include 'create.php';
@@ -28,7 +28,7 @@ Master Pangkat
         <div class="col-12">
             <div class="card card-secondary card-outline">
                 <div class="card-header">
-                    <h3 class="card-title">Data Master Pangkat</h3>
+                    <h3 class="card-title">Data Master Pegawai</h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body table-responsive p-0">
@@ -37,18 +37,20 @@ Master Pangkat
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Nama Pangkat</th>
-                                    <th>Golongan</th>
+                                    <th>NIP</th>
+                                    <th>Nama Pegawai</th>
+                                    <th>Jabatan</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <!-- <?= $i = 1; ?> -->
-                                <?php foreach ($pangkat as $p) : ?>
+                                <?php foreach ($pegawai as $p) : ?>
                                     <tr>
                                         <td><?= $i++; ?></td>
-                                        <td><?= $p['nama_pangkat']; ?></td>
-                                        <td><?= $p['golongan']; ?></td>
+                                        <td><?= $p['nip']; ?></td>
+                                        <td><?= $p['nama_pegawai']; ?></td>
+                                        <td><?= $p['id_jabatan']; ?></td>
                                         <td>
                                             <button type="submit" class="btn btn-warning"><i class="fas fa-pen text-white"></i></button>
                                             <button type="submit" name="bsimpan" class="btn btn-danger"><i class="fa fa-trash"></i></button>

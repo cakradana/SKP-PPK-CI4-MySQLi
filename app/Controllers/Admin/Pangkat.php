@@ -26,4 +26,16 @@ class Pangkat extends BaseController
         ];
         return view('admin/master_pangkat/index', $data);
     }
+
+    public function save()
+    {
+        $this->pangkatModel->save([
+            'nama_pangkat' => $this->request->getVar('nama_pangkat'),
+            'golongan' => $this->request->getVar('golongan')
+        ]);
+
+        session()->setFlashdata('pesan', 'Data berhasil ditambahkan.');
+
+        return redirect()->to('admin/pangkat');
+    }
 }

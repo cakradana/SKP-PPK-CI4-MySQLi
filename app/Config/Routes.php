@@ -36,10 +36,19 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Login::index');
 
 // route admin
-$routes->add('/admin/dashboard', 'Admin\Dashboard::index');
+$routes->add('/admin', 'Admin\Dashboard::index');
+
+// navbar
 $routes->add('/admin/pangkat', 'Admin\Pangkat::index');
 $routes->add('/admin/jabatan', 'Admin\Jabatan::index');
 $routes->add('/admin/tingkat', 'Admin\Tingkat::index');
+$routes->add('/admin/pegawai', 'Admin\Pegawai::index');
+
+// save
+$routes->add('/pangkat/save', 'Admin\Pangkat::save');
+$routes->add('/jabatan/save', 'Admin\Jabatan::save');
+$routes->add('/tingkat/save', 'Admin\Tingkat::save');
+$routes->add('/pegawai/save', 'Admin\Pegawai::save');
 
 
 

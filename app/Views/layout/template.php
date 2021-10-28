@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="<?= base_url('assets') ?>/dist/css/adminlte.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap4.min.css">
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="<?= base_url('assets') ?>/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
 
     <!-- My CSS -->
     <link rel="stylesheet" href="<?= base_url('assets') ?>/dist/css/style.css">
@@ -206,7 +208,7 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <li class="nav-item">
-                            <a href="<?= base_url('/admin/dashboard'); ?>" class="nav-link">
+                            <a href="<?= base_url('/admin'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -243,6 +245,12 @@
                                     <a href="<?= base_url('/admin/tingkat'); ?>" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Master Tingkat</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<?= base_url('/admin/pegawai'); ?>" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Master Pegawai</p>
                                     </a>
                                 </li>
                             </ul>
@@ -315,6 +323,12 @@
     <script src="<?= base_url('assets') ?>/dist/js/dataTables.js"></script>
     <script src="<?= base_url('assets') ?>/dist/js/dataTables.min.js"></script>
     <script src="<?= base_url('assets') ?>/dist/js/dataTables.bs4.min.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="<?= base_url('assets') ?>/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- MyScript -->
+    <script src="<?= base_url('assets') ?>/dist/myscript/script.js"></script>
+
 
 </body>
 
