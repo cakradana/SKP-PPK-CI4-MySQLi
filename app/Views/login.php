@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $title; ?></title>
 
+    <!-- favicon -->
+    <link rel="icon" href="<?= base_url() ?>/eskp-icon.ico">
+
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
@@ -20,7 +23,7 @@
     <div class="login-box">
         <!-- <div class="login-logo">
     <a href="<?= base_url('assets') ?>/index2.html"><b>Admin</b>LTE</a>
-  </div> -->
+    </div> -->
         <!-- /.login-logo -->
         <div class="card">
             <div class="card-body login-card-body">

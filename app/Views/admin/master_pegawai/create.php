@@ -14,7 +14,7 @@
                         <?= csrf_field(); ?>
                         <div class="form-group">
                             <label for="nip">NIP</label>
-                            <input type="text" class="form-control" id="nip" name="nip" placeholder="" maxlength="18" required>
+                            <input type="text" class="form-control" id="nip" name="nip" placeholder="" required>
                         </div>
                         <div class="form-group">
                             <label for="nama_pegawai">Nama Pegawai</label>
